@@ -1,0 +1,66 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:80px;
+    width: 100%;
+    min-height: 80vh;
+    background:#0f172a;
+    color:white;
+}
+.hero-content{
+    width: 50%;
+}
+.greeting{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.hero-name{
+    font-size: 60px;
+    margin: 15px;
+}
+.hero-role{
+    font-size:35px;
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+.hero-description{
+    font-size: 18px;
+    line-height: 1.8;
+    color:#cbd5e1;
+    margin-bottom: 40px;
+}
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+}
+.primary-btn{
+    padding: 14px 30px;
+    border: none;
+    border-radius: 10px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+.secondary-btn{
+    padding: 14px 30px;
+    border: 2px solid #2563eb;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.hero-image{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.hero-image img{
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    object-fit: cover;
+    border:5px solid #2563eb;
+}
