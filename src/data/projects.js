@@ -9,7 +9,7 @@ const projects = [
     image: portfolio,
     technologies: ["React", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/Sanjeeb2005/TaskFlow-Pro",
-    live: "#",
+    live: "",
     featured: true
     },
     {
@@ -19,7 +19,7 @@ const projects = [
     image: portfolio,
     technologies: ["React", "CSS"],
     github: "https://github.com/Sanjeeb2005/developer-portfolio",
-    live: "#",
+    live: "",
     featured: false
     },
     {
@@ -29,7 +29,7 @@ const projects = [
     image: portfolio,
     technologies: ["React", "CSS"],
     github: "https://github.com/Sanjeeb2005/developer-portfolio",
-    live: "#",
+    live: "",
     featured: false
     }
 

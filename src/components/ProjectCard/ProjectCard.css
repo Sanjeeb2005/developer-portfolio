@@ -25,6 +25,16 @@
     margin:15px 20px;
     color:#cbd5e1;
 }
+.tech-stack{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tech-stack p{
+    background-color: #cbd5e12f;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+}
 
 .project-buttons{
     display:flex;

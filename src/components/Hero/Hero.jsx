@@ -1,6 +1,24 @@
 import "./Hero.css";
 import profile from "../../assets/images/profile.png";
 
+function handleViewProjects(){
+    const projectsSection = document.getElementById('projects');
+    if(projectsSection){
+        projectsSection.scrollIntoView({behavior: "smooth"});
+    }
+}
+
+function handleDownloadCV(){
+    const link = document.createElement('a');
+    link.href = '../../../public/Sanjeeb_Batriya_Resume.pdf';
+    link.download = 'Sanjeeb_Batriya_Resume.pdf';
+    link.click();
+
+    document.body.appendChild(link);
+    link.click();
+    link.body.removeChild(link);
+}
+
 function Hero(){
     return(
         <section className="hero">
@@ -12,8 +30,8 @@ function Hero(){
                 <h2 className="hero-role">FullStack Developer</h2>
                 <p className="hero-description">I build modern web applications that solve real-world problems.</p>
                 <div className="hero-buttons">
-                    <button className="primary-btn">View Project</button>
-                    <button className="secondary-btn">Download CV</button>
+                    <button className="primary-btn" onClick={handleViewProjects}>View Project</button>
+                    <button className="secondary-btn" onClick={handleDownloadCV}>Download CV</button>
                 </div>
             </div>
             <div className="hero-image">

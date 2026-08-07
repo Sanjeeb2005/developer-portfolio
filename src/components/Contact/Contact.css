@@ -1,0 +1,38 @@
+form{
+    background-color: #0f172a;
+    text-align: center;
+}
+h1{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+h3{
+    color: #fff;
+    font-size: 10px;
+}
+input{
+    width: 20%;
+    height: 40px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+textarea{
+    width: 20%;
+    height: 80px;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}

@@ -1,5 +1,16 @@
 import "./Navbar.css";
 
+function downloadResume(){
+    const resume = document.createElement('a');
+    resume.href = '../../../public/Sanjeeb_Batriya_Resume.pdf';
+    resume.download = 'Sanjeeb_Batriya_Resume.pdf';
+    resume.click();
+
+    resume.body.appendChild(resume);
+    resume.click();
+    resume.body.removeChild(resume);
+}
+
 function Navbar(){
     return (
         <nav className="navBar">
@@ -14,7 +25,7 @@ function Navbar(){
                 <li>Projects</li>
                 <li>Contacts</li>
             </ul>
-            <button className="resume-btn">
+            <button className="resume-btn" onClick={downloadResume}>
                 Resume
             </button>
         </nav>

@@ -1,0 +1,11 @@
+.skills-container{
+    background-color: #111827;
+    text-align: center;
+}
+.skill-card{
+    color: #fff;
+    border: 1 solid #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, minmax(20px, auto));
+}
