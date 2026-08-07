@@ -1,29 +1,47 @@
-import "./Contact.css"
-import { useState } from "react";
-import { useEffect } from "react";
-import { useRef } from "react";
+    import "./Contact.css"
+    import emailjs from "@emailjs/browser"
+    import { useState } from "react";
+    import { useEffect } from "react";
 
-function Contact(){
-const [name, setName] = useState("");
-const [email, setEmail] = useState("");
-const [message, setMessage] = useState("");
-useEffect(()=>{
-    console.log("contact page reload")
-},[])
+    function Contact(){
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    useEffect(()=>{
+        console.log("contact page reload")
+    },[])
 
-function handleSubmit(e){    
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-    e.preventDefault();
+    async function handleSubmit(e){    
 
-    console.log(name);
-    console.log(email);
-    console.log(message);
+        e.preventDefault();
 
-    setName("");
-    setEmail("");
-    setMessage("");
-}
-return (
+    const templateParams ={
+        from_name: name,
+        from_email: email,
+        message: message
+    };
+    try{
+    await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        templateParams,
+        PUBLIC_KEY
+    )
+    alert("message sent successfully");
+
+        setName("");
+        setEmail("");
+        setMessage("");
+        
+    } catch (error){
+        console.error(error);
+    }
+    }
+    return (
     <form onSubmit={handleSubmit}>
     <h1>Contact</h1>
     <input type="text" placeholder="Your Name" value={name} onChange={(event)=>setName(event.target.value)}/><br/> <br />

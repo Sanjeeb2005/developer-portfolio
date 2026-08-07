@@ -35,4 +35,5 @@ button{
     border-radius: 5px;
     margin-bottom: 15px;
     font-weight: bold;
+    cursor: pointer;
 }
