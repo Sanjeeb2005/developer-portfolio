@@ -10,24 +10,24 @@ function handleViewProjects(){
 
 function handleDownloadCV(){
     const link = document.createElement('a');
-    link.href = '../../../public/Sanjeeb_Batriya_Resume.pdf';
+    link.href = '/Sanjeeb_Batriya_Resume.pdf';
     link.download = 'Sanjeeb_Batriya_Resume.pdf';
     link.click();
 
     document.body.appendChild(link);
     link.click();
-    link.body.removeChild(link);
+    document.body.removeChild(link);
 }
 
 function Hero(){
     return(
-        <section className="hero">
+        <section className="hero" id="hero">
             <div className="hero-content">
                 <p className="greeting">
                     👋 Hello, I'm
                 </p>
                 <h1 className="hero-name">Sanjeeb Batriya</h1>
-                <h2 className="hero-role">FullStack Developer</h2>
+                <h2 className="hero-role">Full-Stack Developer</h2>
                 <p className="hero-description">I build modern web applications that solve real-world problems.</p>
                 <div className="hero-buttons">
                     <button className="primary-btn" onClick={handleViewProjects}>View Project</button>

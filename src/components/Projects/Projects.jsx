@@ -5,7 +5,7 @@ import ProjectCard from "../ProjectCard/ProjectCard"
 function Projects(){
     return (
         <div className="projects" id="projects">
-            <h1 className="project-heading">Feature Project</h1>
+            <h1 className="project-heading">Feature Projects</h1>
             <div className="project-container">
             {
                 projects.map((item)=>(

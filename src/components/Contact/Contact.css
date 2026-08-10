@@ -1,39 +1,132 @@
-form{
+#contacts {
     background-color: #0f172a;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 20px;
     text-align: center;
 }
-h1{
+
+#contacts h1 {
     color: #fff;
-    font-weight: bolder;
-    font-size: 3rem;
-    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 40px;
 }
-h3{
-    color: #fff;
-    font-size: 10px;
-}
-input{
-    width: 20%;
-    height: 40px;
-    text-align: center;
-    border: none;
+
+#contacts input {
+    width: 100%;
+    max-width: 500px;
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid #334155;
     outline: none;
     border-radius: 8px;
-    margin-top: 10px;
-}
-textarea{
-    width: 20%;
-    height: 80px;
-    padding: 5px;
-    border: none;
-    border-radius: 8px;
-}
-button{
-    border: none;
-    outline: none;
-    padding: 10px 40px;
-    border-radius: 5px;
     margin-bottom: 15px;
-    font-weight: bold;
+    box-sizing: border-box;
+}
+
+#contacts textarea {
+    width: 100%;
+    max-width: 500px;
+    height: 150px;
+    padding: 15px;
+    border: 1px solid #334155;
+    outline: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+#contacts input:focus,
+#contacts textarea:focus {
+    border-color: #2563eb;
+}
+
+#status {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+#contacts button {
+    border: none;
+    outline: none;
+    padding: 12px 40px;
+    border-radius: 8px;
+    font-weight: 600;
     cursor: pointer;
+    background: #2563eb;
+    color: white;
+}
+#contacts input,
+#contacts textarea {
+    width: 100%;
+    max-width: none;
+}
+#contacts button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+/*left side*/
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+.contact-info {
+    width: 40%;
+}
+
+.contact-info h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+.contact-info > p {
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.contact-details p {
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.contact-details strong {
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    #contacts {
+        padding: 60px 20px;
+    }
+
+    #contacts h1 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 500px;
+    }
+
 }

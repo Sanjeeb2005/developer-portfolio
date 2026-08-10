@@ -3,8 +3,9 @@ import skills from "../../data/skills";
 
 function Skills(){
     return(
-        <div className="skills-container">
+        <div className="skills-container" id="skills">
             <h1>My Skills</h1>
+            <div className="skills-grid">
             {
                 skills.map((skill)=>(
                     <div key={skill.id} className="skill-card">
@@ -13,6 +14,7 @@ function Skills(){
                     </div>
                 ))
             }
+            </div>
         </div>
     );
 }

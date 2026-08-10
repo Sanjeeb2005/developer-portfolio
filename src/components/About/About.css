@@ -1,16 +1,122 @@
-.about{
-    padding: 80px;
-    background:#111827;
-    color:white;
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+.about {
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 100px;
+    background: #111827;
+    color: white;
 }
 .section-title{
     text-align: center;
     font-size: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+    font-weight: 700;
 }
 .about-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
+}
+.about-left {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-right {
+    width: 55%;
+}
+.about-left img {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #2563eb;
+}
+.about-right h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+.about-right > p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #cbd5e1;
+    max-width: 650px;
+    margin-bottom: 35px;
+}
+.about-info {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.info-card {
+    flex: 1;
+    min-width: 150px;
+    padding: 20px;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.info-card:hover {
+    transform: translateY(-5px);
+    border-color: #2563eb;
+}
+.info-card h4 {
+    font-size: 16px;
+    color: #38bdf8;
+    margin-bottom: 8px;
+}
+.info-card p {
+    font-size: 15px;
+    color: #cbd5e1;
+}
+@media (max-width: 768px) {
+
+    .about {
+        padding: 60px 20px;
+    }
+
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-left {
+        width: 100%;
+    }
+
+    .about-left img {
+        width: 280px;
+        height: 320px;
+    }
+
+    .about-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-right > p {
+        max-width: 100%;
+    }
+
+    .about-info {
+        justify-content: center;
+    }
+
+    .info-card {
+        min-width: 200px;
+    }
+
 }
