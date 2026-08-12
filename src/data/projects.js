@@ -11,26 +11,6 @@ const projects = [
     github: "https://github.com/Sanjeeb2005/TaskFlow-Pro",
     live: "",
     featured: true
-    },
-    {
-        id: 1,
-    title: "Whether App",
-    description: "A modern portfolio website built with React.",
-    image: portfolio,
-    technologies: ["React", "CSS"],
-    github: "https://github.com/Sanjeeb2005/developer-portfolio",
-    live: "",
-    featured: false
-    },
-    {
-        id: 2,
-    title: "Team Management",
-    description: "A modern portfolio website built with React.",
-    image: portfolio,
-    technologies: ["React", "CSS"],
-    github: "https://github.com/Sanjeeb2005/developer-portfolio",
-    live: "",
-    featured: false
     }
 
 ];
