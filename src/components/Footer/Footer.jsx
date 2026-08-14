@@ -1,8 +1,31 @@
 import "./Footer.css";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function Footer() {
+    gsap.registerPlugin(ScrollTrigger);
+    const footerRef = useRef(null);
+    useEffect(() => {
+
+    gsap.set(footerRef.current, {
+        opacity: 0
+    });
+
+    gsap.to(footerRef.current, {
+        opacity: 1,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: footerRef.current,
+            start: "top 90%",
+            once: true
+        }
+    });
+
+}, []);
     return (
-        <footer className="footer">
+        <footer className="footer" ref={footerRef}>
 
             <h2>Sanjeeb Batriya</h2>
 

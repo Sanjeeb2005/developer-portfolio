@@ -1,7 +1,24 @@
 import "./Navbar.css";
-import { useState } from "react";
+import { useEffect,useRef,useState } from "react";
+import gsap from "gsap";
 
 function Navbar() {
+    const navRef = useRef(null);
+    useEffect(() => {
+
+    gsap.set(navRef.current, {
+        opacity: 0,
+        y: -30
+    });
+
+    gsap.to(navRef.current, {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power2.out"
+    });
+
+}, []);
     const [menuOpen, setMenuOpen] = useState(false);
 
     function downloadResume() {
@@ -26,7 +43,7 @@ function Navbar() {
     }
 
     return (
-        <nav className="navBar">
+        <nav className="navBar" ref={navRef}>
 
             <div className="logo">
                 Portfolio

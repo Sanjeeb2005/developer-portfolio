@@ -1,16 +1,35 @@
     import "./Contact.css"
     import emailjs from "@emailjs/browser"
-    import { useState } from "react";
-    import { useEffect } from "react";
+    import { useEffect, useRef, useState } from "react";
+    import gsap from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
 
     function Contact(){
+        gsap.registerPlugin(ScrollTrigger);
+        const contactRef = useRef(null);
+
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [loading, setLoading] = useState(false);
     const [status, setStatus] = useState("");
     useEffect(()=>{
-        console.log("contact page reload")
+        gsap.set(contactRef.current, {
+        opacity: 0,
+        y: 50
+    });
+
+    gsap.to(contactRef.current, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: contactRef.current,
+            start: "top 80%",
+            once: true
+        }
+    });
     },[])
 
     const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -60,7 +79,7 @@
 
     }
    return (
-    <form onSubmit={handleSubmit} id="contacts">
+    <form onSubmit={handleSubmit} id="contacts" ref={contactRef}>
 
         <h1>Contact Me</h1>
 
