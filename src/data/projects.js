@@ -11,18 +11,7 @@ const projects = [
     github: "https://github.com/Sanjeeb2005/TaskFlow-Pro",
     live: "",
     featured: true
-    },
-    {
-         id: 1,
-    title: "TaskFlow Pro",
-    description: "A modern task management application built using the MERN Stack.",
-    image: portfolio,
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/Sanjeeb2005/TaskFlow-Pro",
-    live: "",
-    featured: true
     }
-
 
 ];
 
