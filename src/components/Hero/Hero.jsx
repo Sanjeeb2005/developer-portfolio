@@ -1,7 +1,7 @@
 import "./Hero.css";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import profile from "../../assets/images/Profile.png";
+import ProfileImage from "../../assets/images/profile.png";
 import { MdOpacity } from "react-icons/md";
 
 function handleViewProjects(){
@@ -64,7 +64,7 @@ function Hero(){
                 </div>
             </div>
             <div className="hero-image">
-                <img src={profile}alt="Profile" />
+                <img src={ProfileImage}alt="Profile" />
             </div>
         </section>
     );
