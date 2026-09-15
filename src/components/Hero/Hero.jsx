@@ -1,7 +1,7 @@
 import "./Hero.css";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import profile from "../../assets/images/profile.png";
+import profile from "../../assets/images/Profile.png";
 import { MdOpacity } from "react-icons/md";
 
 function handleViewProjects(){

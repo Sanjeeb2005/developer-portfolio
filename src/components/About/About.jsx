@@ -2,6 +2,7 @@ import "./About.css";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import selfImage from "../../assets/images/selfProfile.jpg"
 
 function About() {
   gsap.registerPlugin(ScrollTrigger);
@@ -69,7 +70,7 @@ function About() {
 
         <div className="about-left">
           <img
-            src="https://placehold.co/350x400"
+            src={selfImage}
             alt="About"
           />
         </div>
