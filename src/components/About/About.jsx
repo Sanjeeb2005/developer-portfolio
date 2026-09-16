@@ -89,11 +89,6 @@ function About() {
           <div className="about-info">
 
             <div className="info-card">
-              <h4>Experience</h4>
-              <p>IT Engineer</p>
-            </div>
-
-            <div className="info-card">
               <h4>Education</h4>
               <p>Bachelor of Technology</p>
             </div>

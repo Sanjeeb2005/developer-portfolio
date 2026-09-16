@@ -13,8 +13,8 @@ function handleViewProjects(){
 
 function handleDownloadCV(){
     const link = document.createElement('a');
-    link.href = '/Sanjeeb_Batriya_Resume.pdf';
-    link.download = 'Sanjeeb_Batriya_Resume.pdf';
+    link.href = '/Sanjeeb_Batriya.pdf';
+    link.download = 'Sanjeeb_Batriya.pdf';
 
     document.body.appendChild(link);
     link.click();
