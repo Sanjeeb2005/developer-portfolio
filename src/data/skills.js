@@ -1,66 +1,71 @@
 const skills = [
     {
     id: 1,
-    name: "HTML",
+    name: "HTML5",
     category: "Frontend"
     },
     {
     id: 2,
-    name: "CSS",
+    name: "CSS3",
     category: "Frontend"
     },
     {
-    id: 3,
+      id: 3,
+      name: "Tailwind CSS",
+      category: "Frontend"
+    },
+    {
+    id: 4,
     name: "JavaScript",
     category: "Frontend"
     },
     {
-    id: 4,
+    id: 5,
     name: "React",
     category: "Frontend"
     },
     {
-    id: 5,
+    id: 6,
     name: "GSAP",
     category: "Frontend"
     },
     {
-    id: 6,
+    id: 7,
     name: "Node.js",
     category: "Backend"
     },
     {
-    id: 7,
+    id: 8,
     name: "Express.js",
     category: "Backend"
     },
     {
-    id: 8,
+    id: 9,
     name: "REST API",
     category: "Backend"
     },
     {
-    id: 9,
+    id: 10,
     name: "MongoDB",
     category: "Database"
     },
     {
-    id: 10,
+    id: 11,
     name: "Mongoose",
     category: "Database"
     },
     {
-    id: 11,
+    id: 12,
     name: "JWT",
     category: "Security"
     },
     {
-    id: 12,
+    id: 13,
     name: "Git",
     category: "Tools"
     },
     {
-    id: 13,
+    id: 14,
     name: "GitHub",
     category: "Tools"
     }
