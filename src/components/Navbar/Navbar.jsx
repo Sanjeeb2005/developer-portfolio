@@ -23,8 +23,8 @@ function Navbar() {
 
     function downloadResume() {
         const resume = document.createElement("a");
-        resume.href = "/Sanjeeb_Batriya.pdf";
-        resume.download = "Sanjeeb_Batriya.pdf";
+        resume.href = "/SanjeebBatriya.pdf";
+        resume.download = "SanjeebBatriya.pdf";
         document.body.appendChild(resume);
         resume.click();
         document.body.removeChild(resume);
